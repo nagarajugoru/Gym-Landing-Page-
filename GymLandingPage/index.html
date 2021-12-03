@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gym Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="#" class="logo">Fitness</a>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </header>
+            <div class="nav">
+                <ul>
+                    <li><a href="#" data-text="Home">Home</a></li>
+                    <li><a href="#" data-text="About">About</a></li>
+                    <li><a href="#" data-text="Training">Training</a></li>
+                    <li><a href="#" data-text="Service">Service</a></li>
+                    <li><a href="#" data-text="Blog">Blog</a></li>
+                    <li><a href="#" data-text="Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="banner"></div>
+            <div class="content">
+                <h2>Let's<br>
+                 Get<br>
+                <span>Fit</span></h2>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+            <div class="service" id="popup">
+                <div class="container">
+                    <a class="close-btn" onclick="pop()"><i class="fas fa-times"></i></a>
+                    <div class="info">
+                        <div class="box">
+                            <div class="icon"></div>
+                            <h4>WEIGHT<br><span>LIFTING</span></h4>
+                            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.</P>
+                        </div>
+                        <div class="box">
+                            <div class="icon"></div>
+                            <h4>PERSONAL<br><span>TRAINING</span></h4>
+                            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.</P>
+                        </div>
+                        <div class="box">
+                            <div class="icon"></div>
+                            <h4>BODY<br><span>BUILDING</span></h4>
+                            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="floating_text" onclick="pop()">Services</a>
+        </section>
+        <script type="text/javascript">
+            
+            document.querySelector('#menu-btn').onclick = () =>{
+                document.querySelector('#menu-btn').classList.toggle('fa-times');
+                document.querySelector('.nav').classList.toggle('active');
+            }         
+
+            function pop(){
+                var popup = document.getElementById('popup');
+                popup.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
